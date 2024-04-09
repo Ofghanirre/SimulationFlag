@@ -13,7 +13,7 @@ public abstract class AAtom implements IDisplayable, IStateRefreshable {
     protected Vector3d force;
     protected Vector3f color;
 
-    public AAtom(double mass, EAtomType type, Vector3d position, Vector3d velocity,Vector3f color) {
+    public AAtom(double mass, EAtomType type, Vector3d position, Vector3d velocity, Vector3f color) {
         this.mass = mass;
         this.type = type;
         this.position = position;
