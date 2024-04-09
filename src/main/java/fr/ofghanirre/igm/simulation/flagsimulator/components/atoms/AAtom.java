@@ -21,4 +21,31 @@ public abstract class AAtom implements IDisplayable, IStateRefreshable {
         this.force = new Vector3d(0d); // Security Rule
         this.color = color;
     }
+
+    public Vector3f getColor() {
+        return color;
+    }
+
+    public Vector3d getForce() {
+        return force;
+    }
+    public void setForce(Vector3d force) {
+        this.force = force;
+    }
+
+    public double getMass() {
+        return mass;
+    }
+
+    public Vector3d getPosition() {
+        return position;
+    }
+
+    public EAtomType getType() {
+        return type;
+    }
+
+    public Vector3d getVelocity() {
+        return velocity;
+    }
 }
