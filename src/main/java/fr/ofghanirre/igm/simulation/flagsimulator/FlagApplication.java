@@ -48,7 +48,7 @@ public class FlagApplication {
 
         // Récupérer la résolution de l'écran
         long monitor = glfwGetPrimaryMonitor();
-        GLFWVidMode vidmode = glfwGetVideoMode(monitor);
+        GLFWVidMode vidmode = Objects.requireNonNull(glfwGetVideoMode(monitor));
 
         // Create the window
         window = glfwCreateWindow(vidmode.width(), vidmode.height(), "Flag Application", monitor, NULL);
